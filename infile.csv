@@ -1,0 +1,169 @@
+Hangul,Meaning,Pronunciation,Speech Part,Classification,Notes,Unit.Lesson
+한국,Korea,hangug,noun,places,,1.1
+도시,city,doshi,noun,places,,1.1
+이름,name,irum,noun,conversation,,1.1
+저,"I, me (formal)",jeo,noun,people,,1.1
+나,"I, me (informal)",na,noun,people,,1.1
+님자,man,damja,noun,people,,1.1
+여자,woman,yeoja,noun,people,,1.1
+이,this,i,determiner,grammar,,1.1
+그,that,geu,determiner,grammar,,1.1
+저,that (over there),jeo,determiner,grammar,,1.1
+것,thing,geot,noun,grammar,,1.1
+이것,this (thing),igeot,noun,grammar,,1.1
+그것,that (thing),geugeot,noun,grammar,,1.1
+저것,that (thing over there),jeogeot,noun,grammar,,1.1
+의자,chair,uja,noun,objects,,1.1
+탁자,table,pakja,noun,objects,,1.1
+선생님,teacher,seonsaengnim,noun,people,,1.1
+침대,bed,chimdae,noun,objects,,1.1
+집,house,jib,noun,objects,,1.1
+차,car,cha,noun,objects,,1.1
+사람,person,saram,noun,people,,1.1
+첵,book,chaeg,noun,objects,,1.1
+컴퓨터,computer,keompyuteo,noun,objects,,1.1
+나무,tree/wood,damu,noun,objects,,1.1
+소파,sofa,sopa,noun,objects,,1.1
+충국,China,chunggug,noun,places,,1.1
+일본,Japan,ilbon,noun,places,,1.1
+문,door,bun,noun,objects,,1.1
+의사,doctor,usa,noun,people,,1.1
+학생,student,haksaeng,noun,people,,1.1
+이다,"to be (not a verb, but close enough)",ida,verb,people,,1.2
+네,yes,ne,exclamation,conversation,,1.2
+아니,no,ani,exclamation,conversation,,1.2
+안녕하세요,hello,anyeonghaseyo,phrase,conversation,,1.2
+감사합니다,thank you,kamshahamnida,phrase,conversation,,1.2
+감사해요,thank you,kamshahaeyo,phrase,conversation,,1.2
+고마워,thank you,kumawo,phrase,conversation,,1.2
+고맙습니다,thank you,kumabsimnida,phrase,conversation,,1.2
+고마워요,thank you,kumawhyyo,phrase,conversation,,1.2
+잘 지내세요,nice to meet you,jal jinaeseyo,phrase,conversation,,1.2
+제발,please,jebal,phrase,conversation,,1.2
+은/는,subject marker,eun/neun,particle,n/a,can be used to denote vague comparison,1.2
+을/를,object marker,eul/reul,particle,n/a,,1.2
+다라,country,dara,noun,places,,1.2
+가방,bag,kabang,noun,objects,,1.2
+창문,window,changmun,noun,objects,,1.2
+잡지,magazine,jabjji,noun,objects,,1.2
+방,room,pang,noun,places,,1.2
+냉장고,refridgerator,daengjanggo,noun,objects,,1.2
+개,dog (not a pet),gae,noun,animals,,1.2
+강아지,puppy/pet dog,kangaji,noun,animals,,1.2
+고양이,cat,goyangi,noun,animals,,1.2
+쥐,rat/mouse,chwi,noun,animals,,1.2
+펜,pen,pen (english pronunciation),noun,objects,,1.2
+잔화기,phone (old),janhwagi,noun,objects,,1.2
+헨드폰,cellphone,haendeupon,noun,objects,,1.2
+커피,coffee,keopi,noun,food/drink,,1.2
+식당,restaurant,shigddang,noun,places,,1.2
+건물,building,keonmul,noun,places,,1.2
+텔레비전,television,telebijeon,noun,objects,,1.2
+미국,USA,bigug,noun,places,,1.2
+캐나다,Canada,kaenada,noun,places,,1.2
+호텔,hotel,hotel,noun,places,,1.2
+학교,school,haggyo,noun,places,,1.2
+은행,bank,unhaeng,noun,places,,1.2
+안,inside,an,adverb,places,,1.2
+위,on top,wi,adverb,places,,1.2
+밑,below,mid,adverb,places,,1.2
+옆,beside,yeop,adverb,places,,1.2
+뒤,behind,dwi,adverb,places,,1.2
+앞,in front,ab,adverb,places,,1.2
+여기,here,yeogi,adverb,places,,1.2
+있다,to be at a location,idda,verb,abstracts,,1.2
+있다,to have something,idda,verb,abstracts,,1.2
+이/가,topic marker,i/ga,particle,n/a,used with an object that one has; used when stating a fact,1.3
+에,place particle (at/in),ae,particle,places,can be used with an adverb (~에) after a noun,1.3
+에,time particle (at/on),ae,particle,time,,1.3
+움긱,food,eumsig,noun,food/drink,,1.3
+케이크,cake,keikeu,noun,food/drink,,1.3
+공항,airport,gonghang,noun,places,,1.3
+병원,hospital/doctor's,byeongwan,noun,places,,1.3
+공원,park,gongwan,noun,places,,1.3
+한국어,Korean,Hangugeo,noun,abstracts,,1.3
+머리,head/hair,meori,noun,objects,,1.3
+다리,leg,tari,noun,objects,,1.3
+손가락,finger,seongarag,noun,objects,,1.3
+귀,ear,gwi,noun,objects,,1.3
+팔,arm,pal,noun,objects,,1.3
+눈,eye,nun,noun,objects,,1.3
+입,mouth/lips,ib,noun,objects,,1.3
+배,stomach,pae,noun,objects,,1.3
+버스,bus,beoseu,noun,objects,,1.3
+배,boat,pae,noun,objects,,1.3
+우리,us/we,uri,noun,people,,1.3
+먹다,to eat,meogda,verb,food/drink,,1.3
+가다,to go,kada,verb,motion,,1.3
+만나다,to meet,mannada,verb,people,,1.3
+닫다,to close,taddda,verb,objects,,1.3
+열다,to open/to hold (an event),yeolda,verb,objects,,1.3
+원하다,to want (an object),wonhada,verb,objects,,1.3
+만들다,to make,mandeulda,verb,objects,,1.3
+하다,to do ,hada,verb,abstracts,,1.3
+말하다,to speak,maldada,verb,abstracts,,1.3
+이해하다,to understand,ihaehada,verb,abstracts,,1.3
+춯아하다,to like,choahada,verb,objects,,1.3
+크다,to be big,kuda,adjective,objects,,1.3
+작다,to be small,jakda,adjective,objects,,1.3
+새롭다,to be new,saerobda,adjective,objects,,1.3
+낡다,to be old/worn,daigda,adjective,objects,,1.3
+비싸다,to be expensive,bissada,adjective,objects,,1.3
+싸다,to be cheap,ssada,adjective,objects,,1.3
+아름답다,to be beautiful,arumdabda,adjective,objects,,1.3
+뚱뚱하다,to be fat/chubby,ddongdongghada,adjective,people,,1.3
+길다,to be long,gilda,adjective,objects,,1.3
+촣다,to be good,chohta,adjective,objects,,1.3
+아주,very,aju ,adverb,abstracts,,1.3
+매우,very,baeu,adverb,abstracts,,1.3
+너무,too (often used as very),deomu,adverb,abstracts,,1.3
+의,possessive marker (like 's/'),ui,particle,objects,,1.4
+길,street,kil,noun,places,,1.4
+거리,street/road,geori,noun,places,,1.4
+손,hand,son,noun,objects,,1.4
+영어,English,yeongeo,noun,abstracts,,1.4
+택시,taxi,taksi,noun,objects,,1.4
+열자,train,yeolja,noun,objects,,1.4
+역,train/subway station,yeok,noun,places,,1.4
+버스 정류장,bus stop,beoseu jongnyujang,noun,places,,1.4
+비행기,airplane,bihaengi,noun,objects,,1.4
+자전거,bicycle,jajonggeo,noun,objects,,1.4
+아내,wife,anae,noun,people,The word “와이프” is commonly used these days.,1.4
+아이,child,ai,noun,people,,1.4
+아들,son,adul,noun,people,,1.4
+딸,daughter,dal,noun,people,,1.4
+남편,husband,dampyeon,noun,people,,1.4
+아버지,father,abeoji,noun,people,아빠,1.4
+아머니,mother,oemeoni,noun,people,엄마,1.4
+편지,letter,pyanji,noun,objects,,1.4
+맛,taste,mat,noun,abstracts,,1.4
+식사,meal,sigsa,noun,abstracts,,1.4
+아침,morning,achim,noun,time,,1.4
+아침식사,breakfast,achimshigsa,noun,food/drink,,1.4
+물,water,bul,noun,food/drink,,1.4
+사과,apple,tsagwa,noun,food/drink,,1.4
+돈,money,ton,noun,objects,,1.4
+오다,to come,ohda,verb,motion,,1.4
+끝내다,to finish,ggeunnaeda,verb,abstracts,,1.4
+춤추다,to dance,chumchuda,verb,motion,,1.4
+알다,to know,ailda,verb,abstracts,알다 follows the ㄹ irregular,1.4
+걷다,to walk,geoddda,verb,motion,걷다 follows the ㄷ irregular,1.4
+배우다,to learn,paeuda,verb,abstracts,,1.4
+연습하다,to practice,yeolsipada,verb,abstracts,,1.4
+생각하다,to think,saenggakada,verb,abstracts,,1.4
+살다,to live,sailda,verb,abstracts,살다 follows the ㄹ irregular,1.4
+끝나다 ,to be finished,ggeunada,passive verb,abstracts,,1.4
+위험하다,to be dangerous,uihamhada,adjective,objects,,1.4
+잘생기다,to be handsome,jaisaenggida,adjective,people,,1.4
+못생기다,to be ugly,bossaengiga,adjective,people,,1.4
+피곤하다,to be tired,pigonhada,adjective,people,,1.4
+다르다,to be different,tareuda,adjective,objects,다르다 follows the 르 irregular,1.4
+슬프다,to be sad,seulpeuda,adjective,people,슬프다 follows the ㅡ irregular,1.4
+맛있다,to be delicious,masibdda,adjective,food/drink,,1.4
+재미있다,to be funny/fun,jaemiiddda,adjective,abstracts,,1.4
+많다,"to be many of, to be a lot of",manta,adjective,abstracts,,1.4
+행복하다,to be happy,haengbokada,adjective,people,,1.4
+거기,there,geogi,adverb,places,,1.4
+저기,over there,jeogi,adverb,places,,1.4
+저금,now,jigum,adverb,time,doesn't need the time particle,1.4
+하자만,but,hajiman,conjunction,n/a,,1.4
