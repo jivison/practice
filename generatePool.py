@@ -15,6 +15,8 @@ def generate(sort="Speech Part", vocabCSVs=['infile.csv'], secondary_sort=None):
     # The dictionary that will hold all the verbs
     output = {} 
 
+    rawoutput = {}
+
     # The CSV headers
     headers = ['Hangul', "Meaning", "Pronunciation", "Speech Part", "Classification", "Notes", "Unit.Lesson"]
 
@@ -43,6 +45,13 @@ def generate(sort="Speech Part", vocabCSVs=['infile.csv'], secondary_sort=None):
                             output[focus].append(copy_dict)
 
                     else:
+                        # If it doesn't exist create it, else append to it
+                        if focus not in rawoutput:
+                            rawoutput[focus] = [copy_dict]
+                        else:
+                            rawoutput[focus].append(copy_dict)
+
+
                         # Same as focus but a level deeper
                         secondary_focus = word_row[secondary_sort]
                         secondary_copy_dict = copy_dict.copy()
@@ -59,7 +68,7 @@ def generate(sort="Speech Part", vocabCSVs=['infile.csv'], secondary_sort=None):
                         else:
                             output[focus][secondary_focus].append(secondary_copy_dict)
 
-    return output
+    return rawoutput, output
 
 # Make the outut look pretty, mainly for testing
 def prettyprintwords(words, secondarySort=False):

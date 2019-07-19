@@ -1,4 +1,4 @@
-Hangul,Meaning,Pronunciation,Speech Part,Classification,Notes,Unit.Lesson
+Hangul,Meaning,Pronunciation,Speech Part,Classification,,Unit.Lesson
 한국,Korea,hangug,noun,places,,1.1
 도시,city,doshi,noun,places,,1.1
 이름,name,irum,noun,conversation,,1.1
@@ -70,7 +70,7 @@ Hangul,Meaning,Pronunciation,Speech Part,Classification,Notes,Unit.Lesson
 옆,beside,yeop,adverb,places,,1.2
 뒤,behind,dwi,adverb,places,,1.2
 앞,in front,ab,adverb,places,,1.2
-여기,here,yeogi,adverb,places,,1.2
+여기,here,yeogi,noun,places,,1.2
 있다,to be at a location,idda,verb,abstracts,,1.2
 있다,to have something,idda,verb,abstracts,,1.2
 이/가,topic marker,i/ga,particle,n/a,used with an object that one has; used when stating a fact,1.3
@@ -153,7 +153,7 @@ Hangul,Meaning,Pronunciation,Speech Part,Classification,Notes,Unit.Lesson
 생각하다,to think,saenggakada,verb,abstracts,,1.4
 살다,to live,sailda,verb,abstracts,살다 follows the ㄹ irregular,1.4
 끝나다 ,to be finished,ggeunada,passive verb,abstracts,,1.4
-위험하다,to be dangerous,uihamhada,adjective,objects,,1.4
+의험하다,to be dangerous,uihamhada,adjective,objects,,1.4
 잘생기다,to be handsome,jaisaenggida,adjective,people,,1.4
 못생기다,to be ugly,bossaengiga,adjective,people,,1.4
 피곤하다,to be tired,pigonhada,adjective,people,,1.4
@@ -161,9 +161,139 @@ Hangul,Meaning,Pronunciation,Speech Part,Classification,Notes,Unit.Lesson
 슬프다,to be sad,seulpeuda,adjective,people,슬프다 follows the ㅡ irregular,1.4
 맛있다,to be delicious,masibdda,adjective,food/drink,,1.4
 재미있다,to be funny/fun,jaemiiddda,adjective,abstracts,,1.4
-많다,"to be many of, to be a lot of",manta,adjective,abstracts,,1.4
+많다,"to be many of, to be a lot of",manhta,adjective,abstracts,,1.4
 행복하다,to be happy,haengbokada,adjective,people,,1.4
-거기,there,geogi,adverb,places,,1.4
-저기,over there,jeogi,adverb,places,,1.4
+거기,there,geogi,noun,places,,1.4
+저기,over there,jeogi,noun,places,,1.4
 저금,now,jigum,adverb,time,doesn't need the time particle,1.4
 하자만,but,hajiman,conjunction,n/a,,1.4
+도,too/as well,do,particle,n/a,Replaces the subject or object particle,1.4
+동생,younger sibling,dongsaeng,noun,people,can be used to refer to a younger close friend,1.5
+남동생,younger brother,damdongsaeng,noun,people,,1.5
+여동생,younger sister,yeodongsaeng,noun,people,,1.5
+형,older brother,hyeong,noun,people,used if the younger person is male,1.5
+오빠,older brother,obba,noun,people,used if the younger person is female,1.5
+누나,older sister,numa,noun,people,used if the younger person is male,1.5
+언니,older sister,oenni,noun,people,used if the younger person is female,1.5
+삼촌,uncle,samchun,noun,people,,1.5
+이모,aunt (on mother's side),imo,noun,people,,1.5
+고모,aunt (on father's side),gomo,noun,people,,1.5
+아저씨,older man not related to you,ajassi,noun,people,,1.5
+아주머니,older woman not reated to you,ajumeoni,noun,people,,1.5
+할아버지,grandfather,harabeoji,noun,people,,1.5
+할머니,grandmother,haimoni,noun,people,,1.5
+친구,friend,chingu,noun,people,,1.5
+사진,picture,sajin,noun,objects,,1.5
+안경,glasses,angyeong,noun,objects,,1.5
+비밀,secret,bimil,noun,abstracts,,1.5
+비,rain,pi,noun,weather,,1.5
+가게,store/shop,kagae,noun,places,,1.5
+박물관,museum,pangmulgwan,noun,places,,1.5
+가스 레인지,stove (gas range),gaseu raenji,noun,objects,,1.5
+오리,duck,ori,noun,animals,,1.5
+꼬리,tail,ggori,noun,objects,,1.5
+공,ball,gong,noun,objects,,1.5
+기대하다,to expect,gidaehada,verb,abstracts,,1.5
+건너다,"to cross (a street, etc.)",keonneoda,verb,motion,,1.5
+던지다,to throw,teonjida,verb,objects,,1.5
+싫어하다,to not like,shireohada,verb,objects,,1.5
+떠나다,to leave somewhere,ddonada,verb,motion,"kinda like adieu, a final departure",1.5
+농담하다,to joke,dongdamhada,verb,abstracts,,1.5
+공부하다,to study,gongbuhada,verb,abstracts,,1.5
+지루하다,to be boring,jiruhada,adjective,abstracts,,1.5
+마르다,to be too thin (a person),maruda,adjective,people,마르다  follows the 르 Irregular; used in a negative way,1.5
+멀다,to be far away,meolda,adjective,objects,멀다 follows the ㄹ Irregular,1.5
+마르다,to be dry,mareulda,adjective,objects,마르다  follows the 르 Irregular,1.5
+비슷하다,to be similar,biseutada,adjective,objects,,1.5
+싫다,to not be good,silta,adjective,objects,,1.5
+오래되다,to be old (an object),uraedaeda,adjective,objects,,1.5
+배고프다,to be hungry,paegopuda,adjective,people,,1.5
+오늘,today,oneul,adverb,time,skip the time particle,1.5
+어제,yesterday,oejae,adverb,time,skip the time particle,1.5
+내일,tomorrow,naeil,adverb,time,skip the time particle,1.5
+모레,the day after tomorrow,murae,adverb,time,skip the time particle,1.5
+년,year,nyeon,noun,time,,1.5
+일,day,il,noun,time,,1.5
+시간,time,shigan,noun,time,can be used to indicate a number of hours; can also mean time as in this time/last time,1.5
+월요일,Monday,wolyoil,noun,time,day of the week,1.5
+화요일,Tuesday,hwayoil,noun,time,day of the week,1.5
+스요일,Wednesday,tsuyoil,noun,time,day of the week,1.5
+목요일,Thursday,mogyoil,noun,time,day of the week,1.5
+금요일,Friday,geumyoil,noun,time,day of the week,1.5
+토요일,Saturday,toyoil,noun,time,day of the week,1.5
+일요일,Sunday,ilyoil,noun,time,day of the week,1.5
+신발,shoe,shinbal,noun,clothing,,1.6
+남방,shirt,nambang,noun,clothing,,1.6
+질문,question,jilmun,noun,abstracts,,1.6
+문제,"question, problem",munjae,noun,abstracts,,1.6
+나이,age,nai,noun,abstracts,,1.6
+화장실,"bathroom, restroom",hwajangshil,noun,places,,1.6
+부장님,boss,bujangnim,noun,people,,1.6
+분위기,the atmosphere of something,bunwigi,noun,abstracts,,1.6
+차,tea,cha,noun,food/drink,,1.6
+바지,pants,paji,noun,clothing,,1.6
+교실,classroom,gyoshil,noun,places,,1.6
+급식,food at school,kubsig,noun,food/drink,,1.6
+교감선생님,vice principal,gyogamsoeonsaengnim,noun,people,,1.6
+교장선생심,principal,gyojangseonsaengnim,noun,people,,1.6
+풀,glue,peul,noun,objects,,1.6
+수도,captial city,sudo,noun,places,,1.6
+병,bottle,byeong,noun,objects,,1.6
+병,"disease, sickness",byeong,noun,abstracts,,1.6
+생선,fish,saengseon,noun,animals,,1.6
+야채,vegetable,yachae,noun,food/drink,,1.6
+언덕,hill,eodeog,noun,places,,1.6
+선물,present,seonmul,noun,objects,,1.6
+기타,guitar,gita,noun,objects,,1.6
+종이,paper,jongi,noun,objects,,1.6
+우유,milk,uyo,noun,food/drink,,1.6
+손목,wrist,sonmog,noun,objects,,1.6
+시계,clock/watch,shigae,noun,objects,,1.6
+손목시계,wristwatch,sonmogsigae,noun,objects,,1.6
+영화,movie,yeonghwa,noun,abstracts,,1.6
+노력하다,to try,noryeoghada,verb,abstracts,,1.6
+앉다,to sit,an'da,verb,motion,,1.6
+만지다,to touch,manjida,verb,objects,,1.6
+자다,to sleep,jada,verb,abstracts,,1.6
+보다,to see/watch/look at,buda,verb,objects,,1.6
+기다리다,to wait,gidarida,verb,time,,1.6
+청소하다,to clean,cheongsohada,verb,objects,,1.6
+약속하다,to promise,yagsoghada,verb,abstracts,,1.6
+듣다,to hear,teudda,verb,abstracts,듣다 follows the ㄷ irregular,1.6
+들어보다,to listen,deuroeboda,verb,abstracts,,1.6
+그만하다,to stop,geumanhada,verb,abstracts,,1.6
+운동하다,to exercise,undonghada,verb,people,,1.6
+놀라다,to be surprised,nollada,verb,people,,1.6
+빠르다,to be fast,bbareuda,adjective,people,빠르다  follows the 르 irregular,1.6
+느리다,to be slow,neurida,adjective,people,has a negative connotation (like too slow),1.6
+착하다,to be nice,chakhada,adjective,people,,1.6
+곧,soon,god,adverb,time,,
+항상,always,hangsang,adverb,time,,
+주,week,ju,noun,time,,
+아래,bottom,arae,adverb,places,,
+눈쌉,eyebrow,nunsseob,noun,objects,,
+교사,teacher,gyosa,noun,people,teacher the position not the person,
+반,class of students in a school,pan,noun,abstracts,,
+직장,location of work,jigjang,noun,places,the location where you work only,
+벽,wall,byeog,noun,objects,,
+털,"hair (not on head), fur",teol,noun,objects,,
+머리카락,hair (on head),meorikada,noun,objects,,
+저녁,"dinner, evening",jeonyeog,noun,abstracts,,
+점짐,"lunch, noonish",jeomshim,noun,abstracts,,
+옷,clothes,od,noun,clothing,,
+오전,morning,ojeon,noun,time,,
+오후,afternoon,ohu,noun,time,,
+여름,summer,yeorum,noun,time,,
+가을,fall,gaeul,noun,time,,
+겨울,winter,gyeoul,noun,time,,
+붐,spring,bom,noun,time,,
+찾다,to search for/find,chaddda,verb,objects,,
+가르차다,to teach,gareubchida,verb,people,,
+일하다,to work,ilhada,verb,people,can also be used for something that needs to be done,
+짓다,to build,jiddda,verb,objects,,
+사지다,"to own, to possess",gajida,verb,objects,,
+잠그다,to lock,jamgeuda,verb,objects,잠그다 follows the ㅡ irregular,
+잊다,to forget,iddda,verb,abstracts,,
+돕다,to help,dobda,verb,people,,
+주다,to give,juda,verb,objects,,
+맞다,to be correct,maddda,verb,people,,
