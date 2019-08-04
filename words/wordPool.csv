@@ -1,0 +1,596 @@
+Hangul,Meaning,Speech Part,Classification,Notes,Pronunciation,Unit.Lesson
+한국,Korea,noun,places,,hangug,1.1
+도시,city,noun,places,,doshi,1.1
+이름,name,noun,conversation,,irum,1.1
+저,"I, me (formal)",noun,people,,jeo,1.1
+나,"I, me (informal)",noun,people,,na,1.1
+남자,man,noun,people,,damja,1.1
+여자,woman,noun,people,,yeoja,1.1
+이,this,determiner,grammar,,i,1.1
+그,that,determiner,grammar,,geu,1.1
+저,that (over there),determiner,grammar,,jeo,1.1
+것,thing,noun,grammar,,geot,1.1
+이것,this (thing),noun,grammar,,igeot,1.1
+그것,that (thing),noun,grammar,,geugeot,1.1
+저것,that (thing over there),noun,grammar,,jeogeot,1.1
+의자,chair,noun,objects,,uja,1.1
+탁자,table,noun,objects,,pakja,1.1
+선생님,teacher,noun,people,,seonsaengnim,1.1
+침대,bed,noun,objects,,chimdae,1.1
+집,house,noun,objects,,jib,1.1
+차,car,noun,objects,,cha,1.1
+사람,person,noun,people,,saram,1.1
+첵,book,noun,objects,,chaeg,1.1
+컴퓨터,computer,noun,objects,,keompyuteo,1.1
+나무,tree/wood,noun,objects,,damu,1.1
+소파,sofa,noun,objects,,sopa,1.1
+충국,China,noun,places,,chunggug,1.1
+일본,Japan,noun,places,,ilbon,1.1
+문,door,noun,objects,,bun,1.1
+의사,doctor,noun,people,,usa,1.1
+학생,student,noun,people,,haksaeng,1.1
+이다,"to be (not a verb, but close enough)",verb,people,,ida,1.2
+네,yes,exclamation,conversation,,ne,1.2
+아니,no,exclamation,conversation,,ani,1.2
+안녕하세요,hello,phrase,conversation,,anyeonghaseyo,1.2
+감사합니다,thank you,phrase,conversation,,kamshahamnida,1.2
+감사해요,thank you,phrase,conversation,,kamshahaeyo,1.2
+고마워,thank you,phrase,conversation,,kumawo,1.2
+고맙습니다,thank you,phrase,conversation,,kumabsimnida,1.2
+고마워요,thank you,phrase,conversation,,kumawhyyo,1.2
+잘 지내세요,nice to meet you,phrase,conversation,,jal jinaeseyo,1.2
+제발,please,phrase,conversation,,jebal,1.2
+다라,country,noun,places,,dara,1.2
+가방,bag,noun,objects,,kabang,1.2
+창문,window,noun,objects,,changmun,1.2
+잡지,magazine,noun,objects,,jabjji,1.2
+방,room,noun,places,,pang,1.2
+냉장고,refridgerator,noun,objects,,daengjanggo,1.2
+개,dog (not a pet),noun,animals,,gae,1.2
+강아지,puppy/pet dog,noun,animals,,kangaji,1.2
+고양이,cat,noun,animals,,goyangi,1.2
+쥐,rat/mouse,noun,animals,,chwi,1.2
+펜,pen,noun,objects,,pen (english pronunciation),1.2
+잔화기,phone (old),noun,objects,,janhwagi,1.2
+헨드폰,cellphone,noun,objects,,haendeupon,1.2
+커피,coffee,noun,food/drink,,keopi,1.2
+식당,restaurant,noun,places,,shigddang,1.2
+건물,building,noun,places,,keonmul,1.2
+텔레비전,television,noun,objects,,telebijeon,1.2
+미국,USA,noun,places,,bigug,1.2
+캐나다,Canada,noun,places,,kaenada,1.2
+호텔,hotel,noun,places,,hotel,1.2
+학교,school,noun,places,,haggyo,1.2
+은행,bank,noun,places,,unhaeng,1.2
+안,inside,adverb,places,,an,1.2
+위,on top,adverb,places,,wi,1.2
+밑,below,adverb,places,,mid,1.2
+옆,beside,adverb,places,,yeop,1.2
+뒤,behind,adverb,places,,dwi,1.2
+앞,in front,adverb,places,,ab,1.2
+여기,here,noun,places,,yeogi,1.2
+있다,to be at a location,verb,abstracts,,idda,1.2
+있다,to have something,verb,abstracts,,idda,1.2
+움긱,food,noun,food/drink,,eumsig,1.3
+케이크,cake,noun,food/drink,,keikeu,1.3
+공항,airport,noun,places,,gonghang,1.3
+병원,hospital/doctor's,noun,places,,byeongwan,1.3
+공원,park,noun,places,,gongwan,1.3
+한국어,Korean,noun,abstracts,,Hangugeo,1.3
+머리,head/hair,noun,objects,,meori,1.3
+다리,leg,noun,objects,,tari,1.3
+손가락,finger,noun,objects,,seongarag,1.3
+귀,ear,noun,objects,,gwi,1.3
+팔,arm,noun,objects,,pal,1.3
+눈,eye,noun,objects,,nun,1.3
+입,mouth/lips,noun,objects,,ib,1.3
+배,stomach,noun,objects,,pae,1.3
+버스,bus,noun,objects,,beoseu,1.3
+배,boat,noun,objects,,pae,1.3
+우리,us/we,noun,people,,uri,1.3
+먹다,to eat,verb,food/drink,,meogda,1.3
+가다,to go,verb,motion,,kada,1.3
+만나다,to meet,verb,people,,mannada,1.3
+닫다,to close,verb,objects,,taddda,1.3
+열다,to open/to hold (an event),verb,objects,,yeolda,1.3
+원하다,to want (an object),verb,objects,,wonhada,1.3
+만들다,to make,verb,objects,,mandeulda,1.3
+하다,to do ,verb,abstracts,,hada,1.3
+말하다,to speak,verb,abstracts,,maldada,1.3
+이해하다,to understand,verb,abstracts,,ihaehada,1.3
+춯아하다,to like,verb,objects,,choahada,1.3
+크다,to be big,adjective,objects,,kuda,1.3
+작다,to be small,adjective,objects,,jakda,1.3
+새롭다,to be new,adjective,objects,,saerobda,1.3
+낡다,to be old/worn,adjective,objects,,daigda,1.3
+비싸다,to be expensive,adjective,objects,,bissada,1.3
+싸다,to be cheap,adjective,objects,,ssada,1.3
+아름답다,to be beautiful,adjective,objects,,arumdabda,1.3
+뚱뚱하다,to be fat/chubby,adjective,people,,ddongdongghada,1.3
+길다,to be long,adjective,objects,,gilda,1.3
+촣다,to be good,adjective,objects,,chohta,1.3
+아주,very,adverb,abstracts,,aju ,1.3
+매우,very,adverb,abstracts,,baeu,1.3
+너무,too (often used as very),adverb,abstracts,,deomu,1.3
+길,street,noun,places,,kil,1.4
+거리,street/road,noun,places,,geori,1.4
+손,hand,noun,objects,,son,1.4
+영어,English,noun,abstracts,,yeongeo,1.4
+택시,taxi,noun,objects,,taksi,1.4
+열자,train,noun,objects,,yeolja,1.4
+역,train/subway station,noun,places,,yeok,1.4
+버스 정류장,bus stop,noun,places,,beoseu jongnyujang,1.4
+비행기,airplane,noun,objects,,bihaengi,1.4
+자전거,bicycle,noun,objects,,jajonggeo,1.4
+아내,wife,noun,people,The word “와이프” is commonly used these days.,anae,1.4
+아이,child,noun,people,,ai,1.4
+아들,son,noun,people,,adul,1.4
+딸,daughter,noun,people,,dal,1.4
+남편,husband,noun,people,,dampyeon,1.4
+아버지,father,noun,people,아빠,abeoji,1.4
+아머니,mother,noun,people,엄마,oemeoni,1.4
+편지,letter,noun,objects,,pyanji,1.4
+맛,taste,noun,abstracts,,mat,1.4
+식사,meal,noun,abstracts,,sigsa,1.4
+아침,morning,noun,time,,achim,1.4
+아침식사,breakfast,noun,food/drink,,achimshigsa,1.4
+물,water,noun,food/drink,,bul,1.4
+사과,apple,noun,food/drink,,tsagwa,1.4
+돈,money,noun,objects,,ton,1.4
+오다,to come,verb,motion,,ohda,1.4
+끝내다,to finish,verb,abstracts,,ggeunnaeda,1.4
+춤추다,to dance,verb,motion,,chumchuda,1.4
+알다,to know,verb,abstracts,알다 follows the ㄹ irregular,ailda,1.4
+걷다,to walk,verb,motion,걷다 follows the ㄷ irregular,geoddda,1.4
+배우다,to learn,verb,abstracts,,paeuda,1.4
+연습하다,to practice,verb,abstracts,,yeolsipada,1.4
+생각하다,to think,verb,abstracts,,saenggakada,1.4
+살다,to live,verb,abstracts,살다 follows the ㄹ irregular,sailda,1.4
+끝나다 ,to be finished,passive verb,abstracts,,ggeunada,1.4
+의험하다,to be dangerous,adjective,objects,,uihamhada,1.4
+잘생기다,to be handsome,adjective,people,,jaisaenggida,1.4
+못생기다,to be ugly,adjective,people,,bossaengiga,1.4
+피곤하다,to be tired,adjective,people,,pigonhada,1.4
+다르다,to be different,adjective,objects,다르다 follows the 르 irregular,tareuda,1.4
+슬프다,to be sad,adjective,people,슬프다 follows the ㅡ irregular,seulpeuda,1.4
+맛있다,to be delicious,adjective,food/drink,,masibdda,1.4
+재미있다,to be funny/fun,adjective,abstracts,,jaemiiddda,1.4
+많다,"to be many of, to be a lot of",adjective,abstracts,,manhta,1.4
+행복하다,to be happy,adjective,people,,haengbokada,1.4
+거기,there,noun,places,,geogi,1.4
+저기,over there,noun,places,,jeogi,1.4
+저금,now,adverb,time,doesn't need the time particle,jigum,1.4
+하지만,but,conjunction,n/a,,hajiman,1.4
+동생,younger sibling,noun,people,can be used to refer to a younger close friend,dongsaeng,1.5
+남동생,younger brother,noun,people,,damdongsaeng,1.5
+여동생,younger sister,noun,people,,yeodongsaeng,1.5
+형,older brother,noun,people,used if the younger person is male,hyeong,1.5
+오빠,older brother,noun,people,used if the younger person is female,obba,1.5
+누나,older sister,noun,people,used if the younger person is male,numa,1.5
+언니,older sister,noun,people,used if the younger person is female,oenni,1.5
+삼촌,uncle,noun,people,,samchun,1.5
+이모,aunt (on mother's side),noun,people,,imo,1.5
+고모,aunt (on father's side),noun,people,,gomo,1.5
+아저씨,older man not related to you,noun,people,,ajassi,1.5
+아주머니,older woman not reated to you,noun,people,,ajumeoni,1.5
+할아버지,grandfather,noun,people,,harabeoji,1.5
+할머니,grandmother,noun,people,,haimoni,1.5
+친구,friend,noun,people,,chingu,1.5
+사진,picture,noun,objects,,sajin,1.5
+안경,glasses,noun,objects,,angyeong,1.5
+비밀,secret,noun,abstracts,,bimil,1.5
+비,rain,noun,weather,,pi,1.5
+가게,store/shop,noun,places,,kagae,1.5
+박물관,museum,noun,places,,pangmulgwan,1.5
+가스 레인지,stove (gas range),noun,objects,,gaseu raenji,1.5
+오리,duck,noun,animals,,ori,1.5
+꼬리,tail,noun,objects,,ggori,1.5
+공,ball,noun,objects,,gong,1.5
+기대하다,to expect,verb,abstracts,,gidaehada,1.5
+건너다,"to cross (a street, etc.)",verb,motion,,keonneoda,1.5
+던지다,to throw,verb,objects,,teonjida,1.5
+싫어하다,to not like,verb,objects,,shireohada,1.5
+떠나다,to leave somewhere,verb,motion,"kinda like adieu, a final departure",ddonada,1.5
+농담하다,to joke,verb,abstracts,,dongdamhada,1.5
+공부하다,to study,verb,abstracts,,gongbuhada,1.5
+지루하다,to be boring,adjective,abstracts,,jiruhada,1.5
+마르다,to be too thin (a person),adjective,people,마르다  follows the 르 Irregular; used in a negative way,maruda,1.5
+멀다,to be far away,adjective,objects,멀다 follows the ㄹ Irregular,meolda,1.5
+마르다,to be dry,adjective,objects,마르다  follows the 르 Irregular,mareulda,1.5
+비슷하다,to be similar,adjective,objects,,biseutada,1.5
+싫다,to not be good,adjective,objects,,silta,1.5
+오래되다,to be old (an object),adjective,objects,,uraedaeda,1.5
+배고프다,to be hungry,adjective,people,,paegopuda,1.5
+오늘,today,adverb,time,skip the time particle,oneul,1.5
+어제,yesterday,adverb,time,skip the time particle,oejae,1.5
+내일,tomorrow,adverb,time,skip the time particle,naeil,1.5
+모레,the day after tomorrow,adverb,time,skip the time particle,murae,1.5
+년,year,noun,time,,nyeon,1.5
+일,day,noun,time,,il,1.5
+시간,time,noun,time,can be used to indicate a number of hours; can also mean time as in this time/last time,shigan,1.5
+월요일,Monday,noun,time,day of the week,wolyoil,1.5
+화요일,Tuesday,noun,time,day of the week,hwayoil,1.5
+스요일,Wednesday,noun,time,day of the week,tsuyoil,1.5
+목요일,Thursday,noun,time,day of the week,mogyoil,1.5
+금요일,Friday,noun,time,day of the week,geumyoil,1.5
+토요일,Saturday,noun,time,day of the week,toyoil,1.5
+일요일,Sunday,noun,time,day of the week,ilyoil,1.5
+신발,shoe,noun,clothing,,shinbal,1.6
+남방,shirt,noun,clothing,,nambang,1.6
+질문,question,noun,abstracts,,jilmun,1.6
+문제,"question, problem",noun,abstracts,,munjae,1.6
+나이,age,noun,abstracts,,nai,1.6
+화장실,"bathroom, restroom",noun,places,,hwajangshil,1.6
+부장님,boss,noun,people,,bujangnim,1.6
+분위기,the atmosphere of something,noun,abstracts,,bunwigi,1.6
+차,tea,noun,food/drink,,cha,1.6
+바지,pants,noun,clothing,,paji,1.6
+교실,classroom,noun,places,,gyoshil,1.6
+급식,food at school,noun,food/drink,,kubsig,1.6
+교감선생님,vice principal,noun,people,,gyogamsoeonsaengnim,1.6
+교장선생님,principal,noun,people,,gyojangseonsaengnim,1.6
+풀,glue,noun,objects,,peul,1.6
+수도,captial city,noun,places,,sudo,1.6
+병,bottle,noun,objects,,byeong,1.6
+병,"disease, sickness",noun,abstracts,,byeong,1.6
+생선,fish,noun,animals,,saengseon,1.6
+야채,vegetable,noun,food/drink,,yachae,1.6
+언덕,hill,noun,places,,eodeog,1.6
+선물,present,noun,objects,,seonmul,1.6
+기타,guitar,noun,objects,,gita,1.6
+종이,paper,noun,objects,,jongi,1.6
+우유,milk,noun,food/drink,,uyo,1.6
+손목,wrist,noun,objects,,sonmog,1.6
+시계,clock/watch,noun,objects,,shigae,1.6
+손목시계,wristwatch,noun,objects,,sonmogsigae,1.6
+영화,movie,noun,abstracts,,yeonghwa,1.6
+노력하다,to try,verb,abstracts,,noryeoghada,1.6
+앉다,to sit,verb,motion,,an'da,1.6
+만지다,to touch,verb,objects,,manjida,1.6
+자다,to sleep,verb,abstracts,,jada,1.6
+보다,to see/watch/look at,verb,objects,,buda,1.6
+기다리다,to wait,verb,time,,gidarida,1.6
+청소하다,to clean,verb,objects,,cheongsohada,1.6
+약속하다,to promise,verb,abstracts,,yagsoghada,1.6
+듣다,to hear,verb,abstracts,듣다 follows the ㄷ irregular,teudda,1.6
+들어보다,to listen,verb,abstracts,,deuroeboda,1.6
+그만하다,to stop,verb,abstracts,,geumanhada,1.6
+운동하다,to exercise,verb,people,,undonghada,1.6
+놀라다,to be surprised,verb,people,,nollada,1.6
+빠르다,to be fast,adjective,people,빠르다  follows the 르 irregular,bbareuda,1.6
+느리다,to be slow,adjective,people,has a negative connotation (like too slow),neurida,1.6
+착하다,to be nice,adjective,people,,chakhada,1.6
+곧,soon,adverb,time,,god,1.6
+항상,always,adverb,time,,hangsang,1.6
+주,week,noun,time,,ju,1.6
+아래,bottom,adverb,places,,arae,1.6
+눈쌉,eyebrow,noun,objects,,nunsseob,1.7
+교사,teacher,noun,people,teacher the position not the person,gyosa,1.7
+반,class of students in a school,noun,abstracts,,pan,1.7
+직장,location of work,noun,places,the location where you work only,jigjang,1.7
+벽,wall,noun,objects,,byeog,1.7
+털,"hair (not on head), fur",noun,objects,,teol,1.7
+머리카락,hair (on head),noun,objects,,meorikada,1.7
+저녁,"dinner, evening",noun,abstracts,,jeonyeog,1.7
+점짐,"lunch, noonish",noun,abstracts,,jeomshim,1.7
+옷,clothes,noun,clothing,,od,1.7
+오전,morning,noun,time,,ojeon,1.7
+오후,afternoon,noun,time,,ohu,1.7
+여름,summer,noun,time,,yeorum,1.7
+가을,fall,noun,time,,gaeul,1.7
+겨울,winter,noun,time,,gyeoul,1.7
+붐,spring,noun,time,,bom,1.7
+찾다,to search for/find,verb,objects,,chaddda,1.7
+가르차다,to teach,verb,people,,gareuchida,1.7
+일하다,to work,verb,people,can also be used for something that needs to be done,ilhada,1.7
+짓다,to build,verb,objects,,jiddda,1.7
+사지다,"to own, to possess",verb,objects,,gajida,1.7
+잠그다,to lock,verb,objects,잠그다 follows the ㅡ irregular,jamgeuda,1.7
+잊다,to forget,verb,abstracts,,iddda,1.7
+돕다,to help,verb,people,,dobda,1.7
+주다,to give,verb,objects,,juda,1.7
+맞다,to be correct,verb,people,,maddda,1.7
+쉽다,to be easy,adjective,abstracts,쉽다 follows the ㅂ irregular,swibdda,1.7
+덥다,to be hot,adjective,places,덥다 follows this ㅂ irregular,deobdda,1.7
+그리다,to miss (a thing),adjective,abstracts,그립다 follows this ㅂ irregular,guridda,1.7
+귀엽다,to be cute,adjective,people,귀엽다 follows this ㅂ irregular,dwiyeobdda,1.7
+춥다,to be cold,adjective,places,춥다 follows this ㅂ irregular,chubdda,1.7
+어렵다,to be difficult,adjective,abstracts,어렵다 follows the ㅂ irregular,oeryeobdda,1.7
+더럽다,to be dirty,adjective,objects,더럽다 follows the ㅂ irregular,deoreobdda,1.7
+바쁘다,to be busy,adjective,people,바쁘다 follows the ㅡ irregular,pabbeuda,1.7
+같다,to be the same,adjective,objects,,kaddda,1.7
+안전하다,to be safe,adjective,abstracts,,anjeonhada,1.7
+딱딱하다,to be hard/rigid,adjective,objects,,ddagddakda,1.7
+부드럽더,to be soft,adjective,objects,부드럽다 follows the ㅂ irregular,budeureobda,1.7
+가능하다,to be possible,adjective,abstracts,,kaneunghada,1.7
+불가능하다,to be impossible,adjective,abstracts,,bulganeunghada,1.7
+예쁘다,to be pretty,adjective,people,예쁘다 follows the ㅡ irregular,yeobbeuda,1.7
+일찍,early,adverb,time,,iljjig,1.7
+매일,everyday,adverb,time,,maeil,1.7
+기계,machine,noun,objects,,,1.8
+대학교,"college, university",noun,places,,,1.8
+터럭,truck,noun,objects,,,1.8
+검은색,(the colour) black,noun,abstracts,,,1.8
+흰색,(the colour) white,noun,abstracts,,,1.8
+음료수,"beverage, drink",noun,food/drink,,,1.8
+외국,foreign country,noun,places,,,1.8
+외국인,foreigner,noun,people,,,1.8
+고둥학교,high school,noun,places,,,1.8
+도서관,library,noun,places,,,1.8
+곳,place,noun,places,,,1.8
+동시,same time,noun,time,,,1.8
+밤,night,noun,time,,,1.8
+어젯밤,last night,noun,time,,,1.8
+낮,daytime,noun,time,,,1.8
+동,East ,noun,abstracts,,,1.8
+남,South,noun,abstracts,,,1.8
+서,West,noun,abstracts,,,1.8
+북,North,noun,abstracts,,,1.8
+놀다,to play,verb,abstracts,놀다 follows the ㄹ irregular,,1.8
+쓰다,to use,verb,objects,쓰다 follows the ㅡ irregular,,1.8
+쓰다,to write,verb,objects,,,1.8
+실수하다,to make a mistake,verb,people,,,1.8
+수리하다,to repair,verb,objects,,,1.8
+잡다,"to catch, to grab, to grasp",verb,objects,,,1.8
+읽다,to read,verb,objects,,,1.8
+내다,to pay for,verb,objects,,,1.8
+받다,"to get, to receive, to acquire",verb,objects,,,1.8
+도착하다,to arrive,verb,motion,,,1.8
+여행하다,to travel,verb,motion,,,1.8
+왼벽하다,to be perfect,adjective,abstracts,,,1.8
+아프다,"to be sick, to be sore",adjective,people,,,1.8
+똑똑하다,to be smart,adjective,people,,,1.8
+중여하다,to be important,adjective,abstracts,,,1.8
+젊다,to be young,adjective,people,,,1.8
+늙다,to be old,adjective,people,,,1.8
+나쁘다,to be bad,adjective,abstracts,나쁘다 follows the ㅡ irregular,,1.8
+바로,immediately,adverb,time,can be used for both space and time,,1.8
+즉시,immediately,adverb,time,"can only be used for time, less common",,1.8
+빨리,quickly/fast,adverb,motion,,,1.8
+자주,often,adverb,abstracts,,,1.8
+가끔,sometimes,adverb,time,,,1.8
+많이,many/a lot of ,adverb,objects,,,1.8
+방금,a moment ago,adverb,time,,,1.8
+갑자기,suddenly,adverb,time,,,1.8
+매년,every year,adverb,time,,,1.8
+다시,again,adverb,time,,,1.8
+혼자,alone,adverb,people,,,1.8
+안,not,adverb,abstracts,,,1.8
+공장,factory,noun,places,,,1.9
+열,fever,noun,abstracts,,,1.9
+극장,theater,noun,places,,,1.9
+회사,company,noun,abstracts,,,1.9
+장소,place/location,noun,places,,,1.9
+간판,a sign,noun,objects,,,1.9
+직업,job,noun,abstracts,,,1.9
+수업,a class (that you take or teach),noun,abstracts,,,1.9
+고기,meat ,noun,food/drink,,,1.9
+돼지,pig,noun,animals,,,1.9
+돼지고기,pork,noun,food/drink,,,1.9
+소,cow,noun,animals,,,1.9
+소고기,beef,noun,food/drink,,,1.9
+꽃,flowers,noun,objects,,,1.9
+값,price,noun,abstracts,,,1.9
+땅콩,peanut,noun,food/drink,,,1.9
+축구(하다),(to play) soccer,noun,abstracts,,,1.9
+야구(하다),(to play) baseball,noun,abstracts,,,1.9
+여권,passport,noun,objects,,,1.9
+수건,towel,noun,objects,,,1.9
+체육,physical education,noun,abstracts,,,1.9
+지하철,subway,noun,objects,,,1.9
+미래,future,noun,abstracts,,,1.9
+되다,to become,verb,abstracts,,,1.10
+시작하다,to start,verb,abstracts,,,1.10
+행동하다,to act,verb,abstracts,,,1.10
+소개하다,to introduce,verb,people,,,1.10
+발견하다,"to discover, to find",verb,abstracts,,,1.10
+방문하다,to visit,verb,places,,,1.10
+잃다,to lose,verb,people,,,1.10
+잃어버리다,to lose,verb,people,,,1.10
+입다,"to put on one's clothes, to wear",verb,objects,,,1.10
+벗다,to take off one's clothes,verb,objects,,,1.10
+웃다,to laugh,verb,people,,,1.10
+부끄럽다,to be shy,adjective,people,부끄럽다 follows the ㅂ irregular,,1.10
+건강하다,to be healthy,adjective,people,,,1.10
+이제,now,adverb,time,,,1.10
+현재,now/present,adverb,time,generally a longer length of time,,1.10
+하나,one,number,cardinal,pure Korean,,1.11
+둘,two,number,cardinal,pure Korean,,1.11
+셋,three,number,cardinal,pure Korean,,1.11
+넷,four,number,cardinal,pure Korean,,1.11
+다섯,five,number,cardinal,pure Korean,,1.11
+여섯,six,number,cardinal,pure Korean,,1.11
+일곱,seven,number,cardinal,pure Korean,,1.11
+여덟,eight,number,cardinal,pure Korean,,1.11
+아홉,nine,number,cardinal,pure Korean,,1.11
+열,ten,number,cardinal,pure Korean,,1.11
+스물,twenty,number,cardinal,pure Korean,,1.11
+서른,thirty,number,cardinal,pure Korean,,1.11
+마흔,forty,number,cardinal,pure Korean,,1.11
+쉰,fifty,number,cardinal,pure Korean,,1.11
+일,one,number,cardinal,sino-Korean,,1.11
+이,two ,number,cardinal,sino-Korean,,1.11
+삼,three,number,cardinal,sino-Korean,,1.11
+사,four,number,cardinal,sino-Korean,,1.11
+오,five,number,cardinal,sino-Korean,,1.11
+육,six,number,cardinal,sino-Korean,,1.11
+칠,seven,number,cardinal,sino-Korean,,1.11
+팔,eight,number,cardinal,sino-Korean,,1.11
+구,nine,number,cardinal,sino-Korean,,1.11
+십,ten,number,cardinal,sino-Korean,,1.11
+벡,one hundred,number,cardinal,sino-Korean,,1.11
+천,one thousand,number,cardinal,sino-Korean,,1.11
+만,ten thousand,number,cardinal,sino-Korean,,1.11
+영,zero,number,cardinal,,,1.11
+공,zero,number,cardinal,,,1.11
+처음,the first time/beginning,number,time,,,1.11
+마지막,last ,number,ordinal,,,1.11
+번째,counter for 1st/2nd/3rd etc.,number,counter,,,1.11
+첫 번째,first,number,ordinal,,,1.11
+두 번째,second,number,ordinal,,,1.11
+개,counter for things,number,counter,,,1.11
+번,counter for behaviors/actions,number,counter,,,1.11
+명,counter for people,number,counter,,,1.11
+대,counter for automobiles,number,counter,,,1.11
+잔,counter for a 'glass' of ____,number,counter,,,1.11
+시,o'clock,number,time,,,1.11
+분,minute,number,time,,,1.11
+초,second,number,time,,,1.11
+살,years old,number,time,,,1.11
+1월,January,noun,time,,,1.11
+2월,February,noun,time,,,1.11
+3월,March,noun,time,,,1.11
+4월,April,noun,time,,,1.11
+5월,May,noun,time,,,1.11
+6월,June,noun,time,,유월,1.11
+7월,July,noun,time,,,1.11
+8월,August,noun,time,,,1.11
+9월,September,noun,time,,,1.11
+10월,October,noun,time,,시월,1.11
+11월,November,noun,time,,,1.11
+12월,December,noun,time,,,1.11
+기회,chance/opportunity,noun,abstracts,,,1.11
+계횐,plans,noun,abstracts,,,1.11
+회시월,office worker,noun,people,,,1.11
+요리사,a cook/chef,noun,people,,,1.11
+운전사,a driver,noun,people,,,1.11
+달리다,to run,verb,people,,,1.11
+여리하다,to cook,verb,people,,,1.11
+운전하다,to drive,verb,people,,,1.11
+죽다,to die,verb,people,,,1.11
+두렵다,to be scared,adjective,people,두렵다 follows the ㅂ irregular,,1.11
+이장하다,to be strange,adjective,objects,,,1.11
+동안,"for, during, while",adverb,time,,,1.11
+달,month,noun,time,,,1.11
+개월,month,noun,time,,,1.11
+날,day,noun,time,,,1.11
+하루,one day,noun,time,,,1.11
+이틀,two days,noun,time,,,1.11
+사흘,three days,noun,time,,,1.11
+지난 주,last week,noun,time,,,1.11
+지난 달,last month,noun,time,,,1.11
+이번 주,this week,noun,time,,,1.11
+이번 달,this month,noun,time,,,1.11
+다음 주,next week,noun,time,,,1.11
+다음 달,next month,noun,time,,,1.11
+작년,last year,noun,time,,,1.11
+올해,this year,noun,time,,,1.11
+내년,next year,noun,time,,,1.11
+평생 (동안),in my whole life,adverb,time,,,1.11
+보통,usually,adverb,time,,,1.11
+점원,store assistant,noun,people,,,1.12
+배우,actor,noun,people,,,1.12
+목,neck/throat,noun,objects,,,1.12
+소리,noise/sound,noun,abstracts,,,1.12
+목소리,voice,noun,abstracts,,,1.12
+의미,meaning,noun,abstracts,,,1.12
+상황,situation,noun,abstracts,,,1.12
+닭,chicken,noun,animals,,,1.12
+문장,sentence,noun,abstracts,,,1.12
+기름,oil/grease/gasoline,noun,objects,,,1.12
+그들,them,noun,people,,,1.12
+생활,lifestyle/life,noun,abstracts,,,1.12
+속삭이다,to whisper,verb,people,,,1.12
+복습하다,to review/to restudy,verb,abstracts,,,1.12
+바꾸다,to change,verb,abstracts,,,1.12
+유학하다,to study abroad,verb,people,,,1.12
+넘어지다,to fall,verb,objects,,,1.12
+독서하다,to read a book,verb,people,,,1.12
+출발하다,to depart,verb,motion,,,1.12
+마시다,to drink,verb,food/drink,,,1.12
+내리다,"to get off, to go down, to come down",verb,motion,,,1.12
+나오다,to come out,verb,motion,,,1.12
+나가다,to go out,verb,motion,,,1.12
+쓰다,to cover one's head,verb,people,쓰다 follows the ㅡ irregular,,1.12
+모르다,to not know,verb,people,모르다 follows the 르 irregular,,1.12
+신청하다,to apply,verb,abstracts,,,1.12
+사다,to buy,verb,objects,,,1.12
+팔다,to sell,verb,objects,팔다 follows the ㄹ irregular,,1.12
+얇다,to be thin,adjective,people,only used for objects,,1.12
+적당하다,to be moderate,adjective,people,,,1.12
+어리다,to be young,adjective,people,,,1.12
+기쁘다,to be glad,adjective,people,,,1.12
+꽤,fairly/quite,adverb,abstracts,,,
+때,"time, when",adverb,time,,,
+그때,at that time,adverb,time,,,
+쪽,side/direction,noun,motion,can't be alone,,
+열심히,'hard/well' (as in work hard),adverb,abstracts,,,
+완전히,"perfectly, completely",adverb,abstracts,,,
+몇,"some ___, how many (used with a counter)",number,abstracts,,,
+층,floor,noun,objects,,,
+사실,fact,noun,abstracts,,,
+약,medicine,noun,abstracts,,,
+음악,music,noun,abstracts,,,
+하늘,sky,noun,abstracts,,,
+땅,land,noun,places,,,
+지하,underground,noun,places,,,
+빵,bread,noun,food/drink,,,
+쓰레기,trash/garbage,noun,objects,,,
+회계사,accountant,noun,people,,,
+녹차,green tea,noun,food/drink,,,
+이,teeth,noun,objects,,,
+정부,government,noun,abstracts,,,
+성격,personality,noun,abstracts,,,
+온도,temperature,noun,abstracts,,,
+커튼,curtains,noun,objects,,,
+숨,breath,noun,abstracts,,,
+축하하다,to congratulate,verb,people,,,
+일어나다,"to rise, to get up/to wake up",verb,people,,,
+준비하다,"to prepare, to get ready",verb,people,,,
+들어오다,to come in,verb,people,,,
+들어가다,to go in,verb,people,,,
+입장하다,to enter (the verb form of admission),verb,people,,,
+숨쉬다,to breathe,verb,people,,,
+흥미룹다,to be interesting,adjective,abstracts,흥미롭다 follows the ㅂ irregular,,
+늦다,to be late,adjective,people,,,
+시원하다,"to be cool, to be relaxing",adjective,people,,,
+질투하다,to be jealous,adjective,people,,,
+맵다,to be spicy,adjective,food/drink,맵다 follows the ㅂ irregular,,
+죄송하다,to be sorry,adjective,people,,,
+미안하다,to be sorry,adjective,people,,,
+무겁다,to be heavy,adjective,objects,무겁다 follows the ㅂ irregular,,
+가볍다,to be light,adjective,objects,가볍다 follows the ㅂ irregular,,
+유명하다,"to be popular, to be famous",adjective,objects,,,
+익숙하다,to be familiar with something/be used to,adjective,people,,,
+요즘,these days,adverb,time,,,
+같이,together,adverb,people,가치,,
+밥,rice (or sometimes food in general),noun,food/drink,,,
+냄새(나다),smell,noun,abstracts,,,
+청소기,vacuum cleaner,noun,objects,,,
+얼굴,face,noun,objects,,,
+시장,market,noun,places,,,
+몸,body,noun,objects,,,
+불,light/fire,noun,abstracts,,,
+숙제,homework,noun,abstracts,,,
+기억,memory,noun,abstracts,,,
+상자,box,noun,objects,,,
+바람,wind,noun,abstracts,,,
+세금,tax,noun,abstracts,,,
+켜다,to turn on,verb,objects,,,
+끄다,to turn off,verb,objects,끄다 follows the ㅡ irregular,,
+숨다,to hide oneself,verb,people,,,
+숨기다,to hide an object,verb,objects,,,
+고장내다,to break,verb,objects,,,
+놓다,to lay an object down,verb,objects,,,
+눕다,to lie down,verb,people,눕다 follows the ㅂ irregular,,
+존경하다,to respect,verb,people,,,
+대체하다,to replace,verb,objects,,,
+제공하다,"to provide, to offer",verb,abstracts,,,
+포함하다,to include,verb,abstracts,,,
+내다,to make something coome up/arise/occur,verb,abstracts,,,
+싸우다,to fight,verb,people,,,
+속이다,to trick somebody,verb,people,,,
+감동하다,to impress,verb,people,,,
+서다,to stand,verb,people,,,
+잠기다,to be locked,passive verb,objects,,,
+켜지다,to be turned on,passive verb,objects,,,
+꺼지다,to be turned off,passive verb,objects,,,
+나다,to have something that you didn't have,passive verb,objects,,,
+고장나다,to be broken,passive verb,objects,,,
+화니다,to be mad,passive verb,people,,,
+짜증나다,to be annoyed,passive verb,people,,,
+놓이다,for an object to be lying down,passive verb,objects,,,
+열리다,to be open,passive verb,objects,,,
+닫히다,to be closed,passive verb,objects,,,
+속다,to be tricked,passive verb,people,,,
+자꾸,repeatedly,adverb,abstracts,,,
