@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 import updatePool
+import numberPool
+
+import json
 import random
 import datetime
 import os
@@ -8,14 +11,106 @@ import math
 import csv
 from termcolor import colored
 
+def safeDivision(num1, num2):
+    if num2 == 0:
+        return 0
+    return math.ceil((num1/num2) * 100)
+
+class Difficulty():
+    def __init__(self, filename):
+        # Schema: 
+        # "words": {
+        #   "word1ID" : {
+        #       "occurrences" : 0,
+        #       "correct" : 0,
+        #       }
+        #   },
+        #   "word2ID" : {
+        #       "occurrences" : 4,
+        #       "correct" : 1,
+        #       }
+        #   },
+        # "sortedKeys" : {
+        #   "0" : ["word1ID"],
+        #   "25" : ["word2ID"]
+        # }
+        
+        self.filename = filename
+
+    def resetPool(self, id_array):
+        with open(self.filename, "w+") as diffs:
+            poolJson = {"words" : {}, "sortedKeys" : {}}
+            
+            for wordID in id_array:
+                poolJson["words"][wordID] = {
+                    "occurrences" : 0,
+                    "correct" : 0,
+                }
+
+            json.dump(poolJson, diffs)
+
+    def regenPool(self):
+        difficultyPool = None
+        with open(self.filename, "r+") as diffs:
+            difficultyPool = json.load(diffs)
+            foundPercentages = []
+            for word, wordDict in difficultyPool["words"].items():
+                tempDifficulty = safeDivision(wordDict["correct"], wordDict["occurrences"])
+                
+                if tempDifficulty not in foundPercentages:
+                    foundPercentages.append(tempDifficulty)
+                    difficultyPool["sortedKeys"][safeDivision(wordDict["correct"], wordDict["occurrences"])] = [word]
+                    continue
+                
+                difficultyPool["sortedKeys"][safeDivision(wordDict["correct"], wordDict["occurrences"])].append(word) 
+                
+        with open(self.filename, "w") as wipedDiffs:
+            json.dump(difficultyPool, wipedDiffs)
+
+    def record(self, msg, wordID):
+        correct = 1 if msg == "Correct!" else 0
+        difficultyPool = None
+        with open(self.filename, "r+") as diffs:
+            difficultyPool = json.load(diffs)
+            difficultyPool["words"][wordID]["occurrences"] += 1
+            difficultyPool["words"][wordID]["correct"] += 1 if correct else 0
+        with open(self.filename, "w") as wipedDiffs:
+            json.dump(difficultyPool, wipedDiffs)
+
+        return correct
+
+    def getDifficultWord(self):
+        self.regenPool()
+        wordID = None
+        difficulty = None
+        with open(self.filename, "r") as diffs:
+            difficultyPool = json.load(diffs) 
+            wordIDArray = difficultyPool["sortedKeys"][list(difficultyPool["sortedKeys"].keys())[0]]
+            random.shuffle(wordIDArray)
+            wordID = wordIDArray[0]
+            difficulty = safeDivision(difficultyPool["words"][wordID]["correct"], difficultyPool["words"][wordID]["occurrences"])
+        return wordID, difficulty
+        
+    def amend(self, wordID):
+        difficultyPool = None
+        with open(self.filename, "r+") as diffs:
+            difficultyPool = json.load(diffs)
+            difficultyPool["words"][wordID]["correct"] += 1
+        
+        with open(self.filename, "w") as wipedDiffs:
+            json.dump(difficultyPool, wipedDiffs)
+    def updatePool():
+        pass
+
 class Score():
-    def __init__(self):
+    def __init__(self, filename):
         self.time = datetime.datetime.now()
-        self.filename = "points.csv"
+        self.filename = filename
         self.score = {
             "correct": 0,
             "count": 0
         }
+        self.difficulty = Difficulty("difficultWords.json")
 
     def get_avgScore(self):
         with open(self.filename, "r") as pointsfile:
@@ -30,23 +125,25 @@ class Score():
                 totalCount.append(int(line["wordCount"]))
                 totalCorrect.append(int(line["correct"]))
 
-            return str(math.ceil((sum(totalCorrect) + self.score["correct"]) / (sum(totalCount) + self.score["count"]) * 100)), str(totalGamesPlayed)
+            return str(math.ceil((sum(totalCorrect) + self.score["correct"]) / (sum(totalCount) + self.score["count"]) * 100)), str(totalGamesPlayed) 
 
     def get_score(self):
-        try:
-            return str(math.ceil((self.score["correct"] / self.score["count"]) * 100))
-        except ZeroDivisionError:
-            return "0"
+        return str(safeDivision(self.score["correct"], self.score["count"]))
 
-    def recordScore(self, msg):
-        self.score["correct"] += 1 if msg == "Correct!" else 0
+
+    def recordScore(self, msg, wordID):
+        self.score["correct"] += self.difficulty.record(msg, wordID)
         self.score["count"] += 1
+
+
         return f"{msg}\nYour new score is {self.get_score()}%"
 
+
     def save(self):
-        with open(self.filename, "a") as csvfile:
-            csvfile.write(
-                f"{self.time}, {self.get_score()}, {self.score['count']}, {self.score['correct']}\n")
+        if self.score["count"] != 0:
+            with open(self.filename, "a") as csvfile:
+                csvfile.write(
+                    f"{self.time}, {self.get_score()}, {self.score['count']}, {self.score['correct']}\n")
 
 
 def 안녕(scoreObj):
@@ -56,12 +153,13 @@ def 안녕(scoreObj):
 
 
 # random, Korean, or English (which language a given word is in)
-def practice(givenLang="random"):
+def practice(pool, filename, title, givenLang="random"):
 
-    score = Score()
+    idArray, idDict = pool[1], pool[0]
+    
+    score = Score(filename)
 
-    pool = updatePool.generate()
-    random.shuffle(pool)
+    random.shuffle(idArray)
 
     while True:
 
@@ -70,11 +168,15 @@ def practice(givenLang="random"):
         try:
 
             # Selecting
-            try:
-                currentWord = pool.pop()
-            except IndexError:
-                print("There are no words left!")
-                안녕(score)
+            # try:
+            #     currentWordID = idArray.pop()
+            #     currentWord = idDict[currentWordID]
+            # except IndexError:
+            #     print("There are no words left!")
+            #     안녕(score)
+
+            currentWordID, currentDifficulty = score.difficulty.getDifficultWord()
+            currentWord = idDict[currentWordID]
 
             hints = [h for h in currentWord["hints"] if list(h.values())[
                 0] != ""]
@@ -101,11 +203,11 @@ def practice(givenLang="random"):
                 os.system("clear")
 
                 tempavg = score.get_avgScore()
-                avgscore = "The total average score over {1} games is {0}%; you are currently {2}\n{3} words left".format(*tempavg, colored("better than average :)", "green") if int(tempavg[0]) <= int(score.get_score()) else colored("worse than average :(", "yellow"), len(pool))
+                avgscore = "The total average score over {1} games is {0}%; you are currently {2}\n{3} words left".format(*tempavg, colored("better than average :)", "green") if int(tempavg[0]) <= int(score.get_score()) else colored("worse than average :(", "yellow"), len(idArray))
                 
                 messages = "\n".join([avgscore, prhints])
 
-                userInput = input(f"\033[1m한국말\033[0m\n{messages}\n{given}: ").lower()
+                userInput = input(f"\033[1m한국말 ({title})\033[0m\n{messages}\n({currentWordID}@{currentDifficulty}%) {given}: ").lower()
                 
                 if userInput == ".quit" or userInput == ".벼샤":
                     안녕(score)
@@ -126,10 +228,11 @@ def practice(givenLang="random"):
 
                 else:
                     print(score.recordScore(
-                        "Correct!" if userInput == expected else f"Incorrect, expected answer: {expected}")
+                        "Correct!" if userInput == expected else f"Incorrect, expected answer: {expected}", currentWordID)
                     )
                     if input() in ["c", "ㅊ"]:
                         score.score["correct"] += 1
+                        score.difficulty.amend(currentWordID)
                         print(f"Correct? Your new score is {score.get_score()}%")
                         input()
 
@@ -139,4 +242,5 @@ def practice(givenLang="random"):
             안녕(score)
 
 
-practice()
+practice(updatePool.generate(), "points.csv", "words")
+# practice(numberPool.sinoKorean(99999), "numberPoints.csv", "numbers")

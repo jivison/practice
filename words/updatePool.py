@@ -15,24 +15,32 @@ def generate():
     filename = update()
     # filename = "wordPool.csv"
     
-    words = []
-    
     print("Generating word pool...")
 
     with open(filename, "r") as file:
         reader = csv.DictReader(file)
 
+        _id = 0
+
+        _idDict = {}
+        _idArray = []
+
         for line in reader:
-            words.append({
+            _id += 1
+
+            _idArray.append(f"word_{_id}")
+
+            _idDict[f"word_{_id}"] = {
                 "Korean" : line["Hangul"],
                 "English" : line ["Meaning"],
                 "hints" : [
                     {"speechPart" : line["Speech Part"]},
                     {"classificaion" : line["Classification"]},
                     {"additional" : line["Notes"]}
-                ]
-            })
+                    ]
+                }
+                
 
     
-    return words
+    return _idDict, _idArray
         
