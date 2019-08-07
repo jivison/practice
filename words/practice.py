@@ -2,6 +2,7 @@
 
 import updatePool
 import numberPool
+from difficulty import Difficulty
 
 import json
 import random
@@ -16,91 +17,6 @@ def safeDivision(num1, num2):
         return 0
     return math.ceil((num1/num2) * 100)
 
-class Difficulty():
-    def __init__(self, filename):
-        # Schema: 
-        # "words": {
-        #   "word1ID" : {
-        #       "occurrences" : 0,
-        #       "correct" : 0,
-        #       }
-        #   },
-        #   "word2ID" : {
-        #       "occurrences" : 4,
-        #       "correct" : 1,
-        #       }
-        #   },
-        # "sortedKeys" : {
-        #   "0" : ["word1ID"],
-        #   "25" : ["word2ID"]
-        # }
-        
-        self.filename = filename
-
-    def resetPool(self, id_array):
-        with open(self.filename, "w+") as diffs:
-            poolJson = {"words" : {}, "sortedKeys" : {}}
-            
-            for wordID in id_array:
-                poolJson["words"][wordID] = {
-                    "occurrences" : 0,
-                    "correct" : 0,
-                }
-
-            json.dump(poolJson, diffs)
-
-    def regenPool(self):
-        difficultyPool = None
-        with open(self.filename, "r+") as diffs:
-            difficultyPool = json.load(diffs)
-            foundPercentages = []
-            for word, wordDict in difficultyPool["words"].items():
-                tempDifficulty = safeDivision(wordDict["correct"], wordDict["occurrences"])
-                
-                if tempDifficulty not in foundPercentages:
-                    foundPercentages.append(tempDifficulty)
-                    difficultyPool["sortedKeys"][safeDivision(wordDict["correct"], wordDict["occurrences"])] = [word]
-                    continue
-                
-                difficultyPool["sortedKeys"][safeDivision(wordDict["correct"], wordDict["occurrences"])].append(word) 
-                
-        with open(self.filename, "w") as wipedDiffs:
-            json.dump(difficultyPool, wipedDiffs)
-
-    def record(self, msg, wordID):
-        correct = 1 if msg == "Correct!" else 0
-        difficultyPool = None
-        with open(self.filename, "r+") as diffs:
-            difficultyPool = json.load(diffs)
-            difficultyPool["words"][wordID]["occurrences"] += 1
-            difficultyPool["words"][wordID]["correct"] += 1 if correct else 0
-        with open(self.filename, "w") as wipedDiffs:
-            json.dump(difficultyPool, wipedDiffs)
-
-        return correct
-
-    def getDifficultWord(self):
-        self.regenPool()
-        wordID = None
-        difficulty = None
-        with open(self.filename, "r") as diffs:
-            difficultyPool = json.load(diffs) 
-            wordIDArray = difficultyPool["sortedKeys"][list(difficultyPool["sortedKeys"].keys())[0]]
-            random.shuffle(wordIDArray)
-            wordID = wordIDArray[0]
-            difficulty = safeDivision(difficultyPool["words"][wordID]["correct"], difficultyPool["words"][wordID]["occurrences"])
-        return wordID, difficulty
-        
-    def amend(self, wordID):
-        difficultyPool = None
-        with open(self.filename, "r+") as diffs:
-            difficultyPool = json.load(diffs)
-            difficultyPool["words"][wordID]["correct"] += 1
-        
-        with open(self.filename, "w") as wipedDiffs:
-            json.dump(difficultyPool, wipedDiffs)
-    def updatePool():
-        pass
 
 class Score():
     def __init__(self, filename):
@@ -159,6 +75,8 @@ def practice(pool, filename, title, givenLang="random"):
     
     score = Score(filename)
 
+    # score.difficulty.resetPool(idArray)
+
     random.shuffle(idArray)
 
     while True:
@@ -207,7 +125,7 @@ def practice(pool, filename, title, givenLang="random"):
                 
                 messages = "\n".join([avgscore, prhints])
 
-                userInput = input(f"\033[1m한국말 ({title})\033[0m\n{messages}\n({currentWordID}@{currentDifficulty}%) {given}: ").lower()
+                userInput = input(f"\033[1m한국말 ({title})\033[0m\n{messages}\n({currentWordID}@{currentDifficulty}) {given}: ").lower()
                 
                 if userInput == ".quit" or userInput == ".벼샤":
                     안녕(score)
