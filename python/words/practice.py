@@ -75,7 +75,7 @@ def practice(pool, filename, title, givenLang="random"):
     
     score = Score(filename)
 
-    # score.difficulty.resetPool(idArray)
+    score.difficulty.resetPool(idArray)
 
     random.shuffle(idArray)
 

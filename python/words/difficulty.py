@@ -1,5 +1,6 @@
 import json
 import random
+import os
 
 class Difficulty():
     def __init__(self, filename):
@@ -17,7 +18,8 @@ class Difficulty():
         self.filename = filename
 
     def resetFile(self, jsonObj):
-        with open(self.filename, "w") as diffs:
+        os.system(f"rm {self.filename}")
+        with open(self.filename, "w+") as diffs:
             json.dump(jsonObj, diffs)
 
     def readFile(self):
@@ -38,23 +40,17 @@ class Difficulty():
         difficultyPool = self.readFile()
 
         for wordID, scoreRecord in difficultyPool["words"].items():
-            print(str(sum(scoreRecord)))
+            
             difficultyPool["sortedKeys"][str(sum(scoreRecord))].append(wordID)
 
-        # for word, correctArray in difficultyPool["words"].items():
-            # difficultyPool["sortedKeys"][str(sum(correctArray))].append(word)
-
-                
         self.resetFile(difficultyPool)
 
     def record(self, msg, wordID):
         correct = 1 if msg == "Correct!" else 0
         difficultyPool = self.readFile()
-        if correct:
-            difficultyPool["words"][wordID] = difficultyPool["words"][wordID][1:].append(1)
-        else:
-            difficultyPool["words"][wordID] = difficultyPool["words"][wordID][1:].append(0)
-     
+        difficultyPool["words"][wordID] = difficultyPool["words"][wordID][1:] 
+        difficultyPool["words"][wordID].append(correct)
+
         self.resetFile(difficultyPool)
 
         return correct
@@ -63,8 +59,17 @@ class Difficulty():
         self.regenPool()
         
         difficultyPool = self.readFile()
-        wordIDArray = difficultyPool["sortedKeys"][list(difficultyPool["sortedKeys"])[0]]
-        
+        wordIDArray = difficultyPool["sortedKeys"]
+
+        if len(wordIDArray["0"]) > 0:
+            wordIDArray = wordIDArray["0"]
+        elif len(wordIDArray["1"]) > 0:
+            wordIDArray = wordIDArray["1"]
+        elif len(wordIDArray["2"]) > 0:
+            wordIDArray = wordIDArray["2"]
+        elif len(wordIDArray["3"]) > 0:
+            wordIDArray = wordIDArray["3"]
+
         random.shuffle(wordIDArray)
         
         wordID = wordIDArray[0]
@@ -74,7 +79,7 @@ class Difficulty():
         
     def amend(self, wordID):
         difficultyPool = self.readFile()
-        difficultyPool["words"][wordID] = difficultyPool["words"][wordID][2] = 1
+        difficultyPool["words"][wordID][2] = 1
 
         self.resetFile(difficultyPool)
     
