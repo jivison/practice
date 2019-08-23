@@ -11,8 +11,10 @@ class Practice {
         this.pool = createPool([dbClient, this]);
     }
 
-    start() {
-        this.pool.home(this.pool);
+    start(fn=undefined) {
+        if (!fn) {
+            this.pool.home(this.pool);
+        }
     }
 
     saveScore(outcome) {

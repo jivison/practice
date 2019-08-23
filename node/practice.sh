@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 /home/john/practice/node/updateCsv.py
+# python3 /home/john/practice/node/updateCsv.py

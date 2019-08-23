@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+html
+    head
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        header
+            //- h1.massive Language Practice
+        
+        article
+            form(action="/answer", method="POST")
+                h1 #{prompt}
+                input(type="text", name="answer", autofocus, autocomplete="off")
+                each val in hints
+                    h2= `${Object.keys(val)[0]} • ${Object.values(val)[0]}`
+
+        footer
