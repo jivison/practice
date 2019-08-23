@@ -1,5 +1,5 @@
 const createPool = require("./pool");
-const client = require("../client");
+
 
 class Practice {
     constructor(dbClient) {
@@ -25,8 +25,6 @@ function createPractice(args) {
     return new Practice(...args);
 }
 
-// module.exports = createGame;
+module.exports = createPractice;
 
-const game = new Practice(client);
 
-game.start();

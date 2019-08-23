@@ -5,6 +5,8 @@ class Word {
         this.id = id;
         this.korean = korean;
         this.english = english;
+        this.promptLang = "";
+
         this.hintsUnmodified = hints;
         this.hints = hints.reduce((acc, element) => {
             try {
@@ -25,15 +27,17 @@ class Word {
         return {
             id: this.id,
             notes: this.hints.reduce((acc, val) => {
-                return (val.notes && acc === '') ? val.notes : acc; 
+                return val.notes && acc === "" ? val.notes : acc;
             }, ""),
             korean: this.korean,
             english: this.english,
             speech_part: this.hints.reduce((acc, val) => {
-                return (val.speech_part && acc === '') ? val.speech_part : acc; 
+                return val.speech_part && acc === "" ? val.speech_part : acc;
             }, ""),
             classification: this.hints.reduce((acc, val) => {
-                return (val.classification && acc === '') ? val.classification : acc; 
+                return val.classification && acc === ""
+                    ? val.classification
+                    : acc;
             }, ""),
             score_history_csv: this.scoreHistory.join(","),
             difficulty_sum: sum(this.scoreHistory)
@@ -50,13 +54,24 @@ class Word {
         return Math.floor(Math.random() * 2) == 0;
     }
 
+    question(promptLang, answerLang) {
+        return {
+            prompt: this[promptLang],
+            answer: this[answerLang]
+        };
+    }
+
     get questionRand() {
         let order = this.coinFlip()
-            ? [this.english, this.korean]
-            : [this.korean, this.english];
+            ? ["english", "korean"]
+            : ["korean", "english"];
+
+        this.promptLang = order[0];
+        this.answerLang = order[1];
+
         return {
-            prompt: order[0],
-            answer: order[1]
+            prompt: this[order[0]],
+            answer: this[order[1]]
         };
     }
 

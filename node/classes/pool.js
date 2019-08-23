@@ -41,8 +41,13 @@ class Pool {
         return createWord(rawWordData);
     }
 
-    askQuestion(word, msgs = "") {
-        let ask = word.questionRand;
+    askQuestion(word, msgs = "", promptLang="rand", answerLang=undefined) {
+        let ask;
+        if (promptLang === 'rand') {
+            ask = word.questionRand;
+        } else {
+            ask = word.question(promptLang, answerLang)
+        }
 
         const headerString = chalk.bold("한국말\n");
 
@@ -66,7 +71,9 @@ class Pool {
                                 word,
                                 `${Object.keys(currentHint)[0]} • ${
                                     Object.values(currentHint)[0]
-                                }`
+                                }`,
+                                word.promptLang,
+                                word.answerLang
                             );
                             break;
                         case ".벼샤":
@@ -79,11 +86,18 @@ class Pool {
                         case ".되ㅔ":
                         case ".h":
                         case ".ㅗ":
-                            this.askQuestion(word, "help");
+                            this.askQuestion(
+                                word,
+                                `[.amb, .므ㅠ] • show a hint | [.quit, .q, .벼샤, .ㅂ] • quit | [.help, .h, .되ㅔ, .ㅗ] • help`,
+                                word.promptLang, 
+                                word.answerLang
+                            );
                         default:
                             this.askQuestion(
                                 word,
-                                `Command '${answer}' not found.`
+                                `Command '${answer}' not found.`,
+                                word.promptLang,
+                                word.answerLangs
                             );
                             break;
                     }
