@@ -2,7 +2,7 @@ const Papa = require("papaparse")
 const fs = require("fs");
 
 function generatePool() {
-    let csvData = Papa.parse(fs.readFileSync("/home/john/practice/node/wordPool.csv").toString());
+    let csvData = Papa.parse(fs.readFileSync("/home/john/practice/node/backend/wordPool.csv").toString());
 
     return csvData.data.slice(1).reduce((acc, val) => {
         acc.push({
