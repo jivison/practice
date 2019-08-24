@@ -52,7 +52,8 @@ class Pool {
     }
 
     home(pool) {
-        pool.selectFromDB(pool.SQL_selectOnDifficulty, askQuestion, [pool]);
+        // pool.selectFromDB(pool.SQL_selectOnDifficulty, askQuestion, [pool]);
+        pool.selectFromDB(pool.SQL_selectAny, askQuestion, [pool]);
     }
 }
 

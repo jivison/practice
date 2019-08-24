@@ -2,15 +2,22 @@
 html
     head
         link(rel="stylesheet", href="/css/style.css")
+        title Practice | #{prompt}
     body
         header
             //- h1.massive Language Practice
         
         article
             form(action="/answer", method="POST")
-                h1 #{prompt}
+                h4 № #{wordId}
+                h1= prompt
+
                 input(type="text", name="answer", autofocus, autocomplete="off")
-                each val in hints
-                    h2= `${Object.keys(val)[0]} • ${Object.values(val)[0]}`
+                if hints
+                    each val in hints
+                        h2= `${Object.keys(val)[0]} • ${Object.values(val)[0]}`
 
         footer
+            if ammended
+                h5 Answer ammended...
+

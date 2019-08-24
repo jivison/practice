@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html
+    head
+        link(rel="stylesheet", href="/css/style.css")
+        title Practice | #{prompt}
+    body
+        header
+        
+        article
+
+            - let action = (next) ? ["/new", "GET"] : ["/ammend", "POST"]
+
+            form(action=action[0], method=action[1])
+                h4 № #{word.id}
+                h1= prompt
+
+                - let color = (answerState === "correct") ? "background: green; color: white; box-shadow: green 5px 5px" : "background: red; color: white; box-shadow: red 5px 5px"
+                - let value = (answerState === "correct") ? "Correct!" : `Incorrect, expected answer: '${answer}'`
+
+                input(type="text", name="answer", autofocus, autocomplete="off", style=color)
+
+                h3= value
+
