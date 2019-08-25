@@ -1,10 +1,3 @@
-module.exports = () => {
-    return {
-        prompt: "사랑스로웠습니다",
-        answer: "To have been lovely"
-    };
-};
-
 const createWord = require("../backend/classes/word");
 const createDBWrite = require("../backend/classes/DBWrite");
 

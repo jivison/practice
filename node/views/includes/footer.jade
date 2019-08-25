@@ -1,0 +1,4 @@
+mixin custom-footer(scoreObj)
+    footer
+        h3 Score
+            h4 #{scoreObj.correct} Correct / #{scoreObj.total} Total (#{(scoreObj.total) ? Math.round(scoreObj.correct/scoreObj.total * 100) : '0'}%)

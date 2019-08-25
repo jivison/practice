@@ -1,3 +1,5 @@
+include ./includes/footer.jade
+
 <!DOCTYPE html>
 html
     head
@@ -13,11 +15,16 @@ html
                 h1= prompt
 
                 input(type="text", name="answer", autofocus, autocomplete="off")
+
+                h4.controls Enter '.hint' for a hint
+
                 if hints
                     each val in hints
                         h2= `${Object.keys(val)[0]} • ${Object.values(val)[0]}`
+        
 
-        footer
-            if ammended
-                h5 Answer ammended...
+                if ammended
+                    h5 Answer ammended...
+
+        +custom-footer(scoreObj)
 

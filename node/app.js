@@ -6,10 +6,12 @@ const path = require("path");
 const createBackend = require("./helpers/backend.js");
 const createWord = require("./backend/classes/word");
 const createDBWrite = require("./backend/classes/DBWrite");
+const createCount = require("./helpers/count");
 
 const client = require("./backend/client");
 const backend = createBackend([client]);
 const dbWrite = createDBWrite([client]);
+const count = createCount();
 
 const app = express();
 
@@ -48,7 +50,8 @@ app.get("/new", (req, res) => {
             Object.assign(ask, {
                 hints: [],
                 ammended: ammend,
-                wordId: word.id
+                wordId: word.id,
+                scoreObj: count.score
             })
         );
     });
@@ -70,6 +73,7 @@ app.post("/answer", (req, res) => {
     if (req.body.answer === word[res.locals.answerLang]) {
         // Handle correct DB-wise
         word.save(true, true);
+        count.save(true);
     }
 
     dbWrite.save(
@@ -84,6 +88,7 @@ app.post("/answer", (req, res) => {
                         {
                             hints: word.hints,
                             wordId: word.id,
+                            scoreObj: count.score
                         }
                     )
                 );
@@ -100,7 +105,8 @@ app.post("/answer", (req, res) => {
                                     ? "correct"
                                     : "incorrect",
                             next:
-                                req.body.answer === word[res.locals.answerLang]
+                                req.body.answer === word[res.locals.answerLang],
+                            scoreObj: count.score
                         }
                     )
                 );
@@ -123,9 +129,11 @@ app.post("/ammend", (req, res) => {
 
     if (req.body.answer === "c" || req.body.answer === "ㅊ") {
         word.save(true, true);
+        count.save(true);
         res.cookie("ammended", true);
     } else {
         word.save(false, true);
+        count.save(false);
     }
     dbWrite.save(
         word,
